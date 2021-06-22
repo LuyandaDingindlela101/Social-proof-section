@@ -1,0 +1,19 @@
+:root {
+    --magenta-900: hsl(300, 43%, 22%);
+    --magenta-700: hsl(303, 10%, 53%);
+    --magenta-400: hsl(300, 24%, 96%);
+
+    --pink: hsl(333, 80%, 67%);
+    
+    -white: hsl(0, 0%, 100%)
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
