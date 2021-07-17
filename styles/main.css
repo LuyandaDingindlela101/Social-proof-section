@@ -25,6 +25,8 @@ body {
 
 
 .proof-container {
+    width: 90%;
+    margin: auto;
     max-width: 1200px;
 }
 
@@ -40,11 +42,12 @@ body {
 .proof-container .proof-header .right-proof {
     width: 50%;
 }
+
 /* LEFT PROOF */
 .proof-container .proof-header .left-proof h2 {
     width: 90%;
     font-size: 60px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: var(--magenta-900);
 }
 
@@ -88,6 +91,7 @@ body {
 .proof-body {
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
     justify-content: space-between;
 }
 
@@ -140,9 +144,68 @@ body {
         flex-direction: column;
     }
 
-    .proof-container .proof-header .right-proof .ratings-container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+
+    .proof-container .proof-header .left-proof,
+    .proof-container .proof-header .right-proof {
+        width: 90%;
     }
+
+    .proof-container .proof-header .left-proof {
+        text-align: center;
+    }
+
+    .proof-container .proof-header .left-proof h2 {
+        width: 100%;
+        font-size: 39px;
+    }
+
+    .proof-container .proof-header .left-proof p {
+        width: 100%;
+    }
+
+    .proof-container .proof-header .right-proof .ratings-container {
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .proof-container .proof-header .right-proof .ratings-container .rating {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .proof-container .proof-header .right-proof .ratings-container .rating:nth-child(1), 
+    .proof-container .proof-header .right-proof .ratings-container .rating:nth-child(2) {
+        transform: translateX(0);
+    }
+
+    .proof-container .proof-header .right-proof .ratings-container .rating span {
+        margin-top: 15px;
+    }
+
+
+    .proof-body {
+        flex-direction: column;
+    }
+
+    .proof-body .testimonial {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .proof-container .proof-header .left-proof h2 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .proof-container .proof-header .right-proof .ratings-container .rating {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .proof-container .proof-header .right-proof .ratings-container .rating:nth-child(1), 
+    .proof-container .proof-header .right-proof .ratings-container .rating:nth-child(2) {
+        transform: translateX(0);
+    }
+
 }
